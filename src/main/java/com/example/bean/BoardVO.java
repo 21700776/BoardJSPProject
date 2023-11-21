@@ -7,7 +7,9 @@ public class BoardVO {
 	private String title;
 	private String writer;
 	private String content;
+	private String category;
 	private Date regdate;
+	private Date editdate;
 	private int cnt;
 	
 	public int getSeq() {
@@ -34,11 +36,24 @@ public class BoardVO {
 	public void setContent(String content) {
 		this.content = content;
 	}
+	public String getCategory() {
+		return category;
+	}
+	public void setCategory(String category) {
+		this.category = category;
+	}
+
 	public Date getRegdate() {
 		return regdate;
 	}
 	public void setRegdate(Date regdate) {
 		this.regdate = regdate;
+	}
+	public Date getEditdate() {
+		return editdate;
+	}
+	public void setEditdate(Date editdate) {
+		this.editdate = editdate;
 	}
 	public int getCnt() {
 		return cnt;
